@@ -41,22 +41,21 @@ GDI<-function(data){
 #' @description The function computes the GDI and MDI indexes for multivariate count data.
 #' @param Y  a matrix of count random variables
 #' @details
-#'gmdi.fun computes GDI and MDI indexes introduced by Kokonendji and Puig (2018).
+#'\code{gmdi.fun} computes GDI and MDI indexes introduced by Kokonendji and Puig (2018).
 #' @importFrom stats var cov
-#' @return Returns a vector containing :\cr
-#'\cr
-#' GDI : The generalized dispersion index\cr
-#'\cr
-#' MDI : The marginal dispersion index
+#' @return Returns a vector containing:
+#'\item{gdi}{The generalized dispersion index}
+#'\item{mdi}{The marginal dispersion index}
 #' @author
 #' Aboubacar Y. Touré and Célestin C. Kokonendji
-#' @export
+#' @export gmdi.fun
 #' @references
-#' Kokonendji, C.C., Puig, P. (2018). Fisher dispersion index for multivariate count distributions : A review and a new proposal, \emph{Journal of Multivariate Analysis} \bold{165}, 180-193.
+#' Kokonendji, C.C. and Puig, P. (2018). Fisher dispersion index for multivariate count distributions : A review and a new proposal, \emph{Journal of Multivariate Analysis} \bold{165}, 180-193.
 #' @examples
 #' Y<-cbind(c(1,2,3,4,5,6,7,8),c(1,2,3,4,5,6,7,8))
 #' gmdi.fun(Y)
 #' Z<-cbind(c(1,2,3,4,5,6,7,8),c(1,2,3,4,5,6,7,8),c(1,2,3,4,5,6,7,8),c(1,2,3,4,5,6,7,8))
+#' gmdi.fun(Z)
 gmdi.fun<-function(Y){
-  data.frame(GDI=GDI(Y),MDI=MDI(Y))
+  data.frame(gdi=GDI(Y),mdi=MDI(Y))
 }

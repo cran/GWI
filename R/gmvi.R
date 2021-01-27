@@ -43,17 +43,16 @@ GVI<-function(data){
 #' @description The function computes GVI and MVI indexes for multivariate positive continuous data.
 #' @param Y  a matrix of positive continuous random variables
 #' @details
-#'gmvi.fun computes the GVI and MVI indexes defined in Kokonendji et al. (2020).
+#'\code{gmvi.fun} computes the GVI and MVI indexes defined in Kokonendji et al. (2020).
 #' @importFrom stats cov
-#' @return Returns a vector containing :\cr
-#' \cr
-#' GVI : The generalized variation index\cr
-#'\cr
-#'MVI : The marginal variation index
+#' @return Returns a vector containing :
+#' \item{gvi}{The generalized variation index}
+#'\item{mvi}{The marginal variation index}
 #' @author
 #' Aboubacar Y. Touré and Célestin C. Kokonendji
-#' @export
+#' @export gmvi.fun
 #' @references
+#'
 #' Kokonendji, C.C., Touré, A.Y. and Sawadogo, A. (2020). Relative variation indexes for multivariate continuous distributions on \eqn{[0,\infty)^k} and extensions, \emph{AStA Advances in Statistical Analysis} \bold{104}, 285-307.
 #' @examples
 #' Y<-cbind(c(2.3 ,26.1 ,8.7 ,10.9 ,1.2,1.4),c(9.7 ,7.3,9.3 ,9.4 ,10.5 ,9.8))
@@ -61,5 +60,5 @@ GVI<-function(data){
 #' Z<-cbind(c(2.3 ,26.1 ,8.7),c(9.7 ,7.3,9.3),c(9.7 ,7.3,9.3),c(9.7 ,7.3,9.3))
 #' gmvi.fun(Z)
 gmvi.fun<-function(Y){
-  data.frame(GVI=GVI(Y),MVI=MVI(Y))
+  data.frame(gvi=GVI(Y),mvi=MVI(Y))
 }

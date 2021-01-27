@@ -10,13 +10,14 @@ vi.fun(X)
 \item{X}{a positive continuous random variable}
 }
 \value{
-VI (The exponential variation index)
+Returns
+\item{vi}{The exponential variation index}
 }
 \description{
 The function calculates the univariate exponential variation index for a positive continuous random variable.
 }
 \details{
-vi.fun computes the univariate exponential variation index defined by Abid et al. (2020). See also Touré et al. (2020) for more details.
+\code{vi.fun} computes the univariate exponential variation index defined by Abid et al. (2020). See also Touré et al. (2020) for more details on this index.
 }
 \examples{
 X<-c(6.23,7.02,8.94,9.56,8.01,4.34,7.44,6.66,12.72,8.34,0)

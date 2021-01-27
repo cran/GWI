@@ -10,17 +10,15 @@ gmvi.fun(Y)
 \item{Y}{a matrix of positive continuous random variables}
 }
 \value{
-Returns a vector containing :\cr
-\cr
-GVI : The generalized variation index\cr
-\cr
-MVI : The marginal variation index
+Returns a vector containing :
+\item{gvi}{The generalized variation index}
+\item{mvi}{The marginal variation index}
 }
 \description{
 The function computes GVI and MVI indexes for multivariate positive continuous data.
 }
 \details{
-gmvi.fun computes the GVI and MVI indexes defined in Kokonendji et al. (2020).
+\code{gmvi.fun} computes the GVI and MVI indexes defined in Kokonendji et al. (2020).
 }
 \examples{
 Y<-cbind(c(2.3 ,26.1 ,8.7 ,10.9 ,1.2,1.4),c(9.7 ,7.3,9.3 ,9.4 ,10.5 ,9.8))

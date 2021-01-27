@@ -10,25 +10,24 @@ gmdi.fun(Y)
 \item{Y}{a matrix of count random variables}
 }
 \value{
-Returns a vector containing :\cr
-\cr
-GDI : The generalized dispersion index\cr
-\cr
-MDI : The marginal dispersion index
+Returns a vector containing:
+\item{gdi}{The generalized dispersion index}
+\item{mdi}{The marginal dispersion index}
 }
 \description{
 The function computes the GDI and MDI indexes for multivariate count data.
 }
 \details{
-gmdi.fun computes GDI and MDI indexes introduced by Kokonendji and Puig (2018).
+\code{gmdi.fun} computes GDI and MDI indexes introduced by Kokonendji and Puig (2018).
 }
 \examples{
 Y<-cbind(c(1,2,3,4,5,6,7,8),c(1,2,3,4,5,6,7,8))
 gmdi.fun(Y)
 Z<-cbind(c(1,2,3,4,5,6,7,8),c(1,2,3,4,5,6,7,8),c(1,2,3,4,5,6,7,8),c(1,2,3,4,5,6,7,8))
+gmdi.fun(Z)
 }
 \references{
-Kokonendji, C.C., Puig, P. (2018). Fisher dispersion index for multivariate count distributions : A review and a new proposal, \emph{Journal of Multivariate Analysis} \bold{165}, 180-193.
+Kokonendji, C.C. and Puig, P. (2018). Fisher dispersion index for multivariate count distributions : A review and a new proposal, \emph{Journal of Multivariate Analysis} \bold{165}, 180-193.
 }
 \author{
 Aboubacar Y. Touré and Célestin C. Kokonendji

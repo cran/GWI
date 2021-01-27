@@ -10,13 +10,14 @@ di.fun(X)
 \item{X}{a count random variable}
 }
 \value{
-DI (The Poisson dispersion index)
+Returns
+\item{di}{The Poisson dispersion index}
 }
 \description{
 The function computes the univariate Poisson dispersion index for a count random variable.
 }
 \details{
-di.fun provides the univariate Poisson  dispersion index (Fisher, 1934). We can refer to Touré et al. (2020) for more details on the Poisson dispersion index.
+\code{di.fun} provides the univariate Poisson  dispersion index (Fisher, 1934). We can refer to Touré et al. (2020) for more details on the Poisson dispersion index.
 }
 \examples{
 X<-c(6,7,8,9,8,4,7,6,12,8,0)
