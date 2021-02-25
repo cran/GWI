@@ -39,13 +39,14 @@ GDI<-function(data){
 }
 #' @title Function for GDI and MDI
 #' @description The function computes the GDI and MDI indexes for multivariate count data.
-#' @param Y  a matrix of count random variables
+#' @param Y  A matrix of count random variables
 #' @details
 #'\code{gmdi.fun} computes GDI and MDI indexes introduced by Kokonendji and Puig (2018).
 #' @importFrom stats var cov
-#' @return Returns a vector containing:
+#' @return Returns:
 #'\item{gdi}{The generalized dispersion index}
 #'\item{mdi}{The marginal dispersion index}
+#' @importFrom stats cor
 #' @author
 #' Aboubacar Y. Touré and Célestin C. Kokonendji
 #' @export gmdi.fun

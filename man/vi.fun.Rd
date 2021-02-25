@@ -7,7 +7,7 @@
 vi.fun(X)
 }
 \arguments{
-\item{X}{a positive continuous random variable}
+\item{X}{A positive continuous random variable}
 }
 \value{
 Returns

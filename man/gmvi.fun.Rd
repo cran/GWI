@@ -7,10 +7,10 @@
 gmvi.fun(Y)
 }
 \arguments{
-\item{Y}{a matrix of positive continuous random variables}
+\item{Y}{A matrix of positive continuous random variables}
 }
 \value{
-Returns a vector containing :
+Returns:
 \item{gvi}{The generalized variation index}
 \item{mvi}{The marginal variation index}
 }

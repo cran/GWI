@@ -7,10 +7,10 @@
 gmdi.fun(Y)
 }
 \arguments{
-\item{Y}{a matrix of count random variables}
+\item{Y}{A matrix of count random variables}
 }
 \value{
-Returns a vector containing:
+Returns:
 \item{gdi}{The generalized dispersion index}
 \item{mdi}{The marginal dispersion index}
 }

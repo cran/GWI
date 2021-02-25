@@ -1,6 +1,6 @@
 #' @title Function for DI
 #' @description The function computes the univariate Poisson dispersion index for a count random variable.
-#' @param X a count random variable
+#' @param X A count random variable
 #' @details
 #' \code{di.fun} provides the univariate Poisson  dispersion index (Fisher, 1934). We can refer to Touré et al. (2020) for more details on the Poisson dispersion index.
 #'

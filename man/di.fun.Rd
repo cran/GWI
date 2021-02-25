@@ -7,7 +7,7 @@
 di.fun(X)
 }
 \arguments{
-\item{X}{a count random variable}
+\item{X}{A count random variable}
 }
 \value{
 Returns

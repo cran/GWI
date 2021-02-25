@@ -1,6 +1,6 @@
 #' @title Function for VI
 #' @description The function calculates the univariate exponential variation index for a positive continuous random variable.
-#' @param X a positive continuous random variable
+#' @param X A positive continuous random variable
 #' @details
 #' \code{vi.fun} computes the univariate exponential variation index defined by Abid et al. (2020). See also Touré et al. (2020) for more details on this index.
 #' @importFrom stats var
@@ -20,5 +20,6 @@
 #' T<-c(6.231,7.022,8.943,9.789,8.014,4.423)
 #' vi.fun(T)
 vi.fun<-function(X){
+
   data.frame(vi=var(X)/mean(X)^2)
 }
